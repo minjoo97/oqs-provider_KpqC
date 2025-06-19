@@ -1,5 +1,17 @@
 | Algorithm                                         | Implementation Version                        | NIST round   |   Claimed NIST Level | Code Point   | OID                         |
 |:--------------------------------------------------|:----------------------------------------------|:-------------|---------------------:|:-------------|:----------------------------|
+| aimer128s                                         | KpqC 2.0 submission                           | KpqC         |                    1 | 65073        | 1.3.9999.11.1.1             |
+| aimer128s **hybrid with** p256                    | KpqC 2.0 submission                           | KpqC         |                    1 | 65075        | 1.3.9999.11.1.2             |
+| aimer128f                                         | KpqC 2.0 submission                           | KpqC         |                    1 | 65110        | 1.3.9999.11.1.3             |
+| aimer128f **hybrid with** p256                    | KpqC 2.0 submission                           | KpqC         |                    1 | 65111        | 1.3.9999.11.1.4             |
+| aimer192s                                         | KpqC 2.0 submission                           | KpqC         |                    3 | 65076        | 1.3.9999.11.2.1             |
+| aimer192s **hybrid with** p384                    | KpqC 2.0 submission                           | KpqC         |                    3 | 65078        | 1.3.9999.11.2.2             |
+| aimer192f                                         | KpqC 2.0 submission                           | KpqC         |                    3 | 65112        | 1.3.9999.11.2.3             |
+| aimer192f **hybrid with** p384                    | KpqC 2.0 submission                           | KpqC         |                    3 | 65113        | 1.3.9999.11.2.4             |
+| aimer256s                                         | KpqC 2.0 submission                           | KpqC         |                    5 | 65079        | 1.3.9999.11.3.1             |
+| aimer256s **hybrid with** p521                    | KpqC 2.0 submission                           | KpqC         |                    5 | 65081        | 1.3.9999.11.3.2             |
+| aimer256f                                         | KpqC 2.0 submission                           | KpqC         |                    5 | 65114        | 1.3.9999.11.3.3             |
+| aimer256f **hybrid with** p521                    | KpqC 2.0 submission                           | KpqC         |                    5 | 65115        | 1.3.9999.11.3.4             |
 | CROSSrsdp128balanced                              | 2.0 + PQClean and OQS patches                 | 2            |                    1 | 0xff22       | 1.3.6.1.4.1.62245.2.1.1.2   |
 | CROSSrsdp128fast                                  | 2.0 + PQClean and OQS patches                 | 2            |                    1 | 0xff23       | 1.3.6.1.4.1.62245.2.1.2.2   |
 | CROSSrsdp128small                                 | 2.0 + PQClean and OQS patches                 | 2            |                    1 | 0xff24       | 1.3.6.1.4.1.62245.2.1.3.2   |
@@ -50,6 +62,12 @@
 | falcon1024 **hybrid with** p521                   | NIST Round 3 submission                       | 3            |                    5 | 0xfe0f       | 1.3.9999.3.5                |
 | falconpadded1024                                  | 20211101                                      | 3            |                    5 | 0xfedf       | 1.3.9999.3.19               |
 | falconpadded1024 **hybrid with** p521             | 20211101                                      | 3            |                    5 | 0xfee0       | 1.3.9999.3.20               |
+| haetae2                                           | KpqC 2.0 submission                           | KpqC         |                    1 | 65101        | 1.3.9999.14.1.1             |
+| haetae2 **hybrid with** p256                      | KpqC 2.0 submission                           | KpqC         |                    1 | 65103        | 1.3.9999.14.1.2             |
+| haetae3                                           | KpqC 2.0 submission                           | KpqC         |                    3 | 65104        | 1.3.9999.14.2.1             |
+| haetae3 **hybrid with** p384                      | KpqC 2.0 submission                           | KpqC         |                    3 | 65106        | 1.3.9999.14.2.2             |
+| haetae5                                           | KpqC 2.0 submission                           | KpqC         |                    5 | 65107        | 1.3.9999.14.3.1             |
+| haetae5 **hybrid with** p521                      | KpqC 2.0 submission                           | KpqC         |                    5 | 65109        | 1.3.9999.14.3.2             |
 | mayo1                                             | NIST Round 2 (February 2025)                  | 2            |                    1 | 0xff32       | 1.3.9999.8.1.3              |
 | mayo1 **hybrid with** p256                        | NIST Round 2 (February 2025)                  | 2            |                    1 | 0xff36       | 1.3.9999.8.1.4              |
 | mayo2                                             | NIST Round 2 (February 2025)                  | 2            |                    1 | 0xff33       | 1.3.9999.8.2.3              |
@@ -166,6 +184,12 @@
 | sphincssha2256fsimple **hybrid with** p521        | NIST Round 3 submission, v3.1 (June 10, 2022) | 3            |                    5 | 0xfebe       | 1.3.9999.6.6.11             |
 | sphincssha2256fsimple                             | NIST Round 3 submission                       | 3            |                    5 | 0xfe74       | 1.3.9999.6.6.3              |
 | sphincssha2256fsimple **hybrid with** p521        | NIST Round 3 submission                       | 3            |                    5 | 0xfe75       | 1.3.9999.6.6.4              |
+| sphincssha256256srobust                           | NIST Round 3 submission                       | 3            |                    5 | 0xfe76       | 1.3.9999.6.6.5              |
+| sphincssha256256srobust **hybrid with** p521      | NIST Round 3 submission                       | 3            |                    5 | 0xfe77       | 1.3.9999.6.6.6              |
+| sphincssha2256ssimple                             | NIST Round 3 submission, v3.1 (June 10, 2022) | 3            |                    5 | 0xfec0       | 1.3.9999.6.6.12             |
+| sphincssha2256ssimple **hybrid with** p521        | NIST Round 3 submission, v3.1 (June 10, 2022) | 3            |                    5 | 0xfec1       | 1.3.9999.6.6.13             |
+| sphincssha2256ssimple                             | NIST Round 3 submission                       | 3            |                    5 | 0xfe78       | 1.3.9999.6.6.7              |
+| sphincssha2256ssimple **hybrid with** p521        | NIST Round 3 submission                       | 3            |                    5 | 0xfe79       | 1.3.9999.6.6.8              |
 | sphincssha256256srobust                           | NIST Round 3 submission                       | 3            |                    5 | 0xfe76       | 1.3.9999.6.6.5              |
 | sphincssha256256srobust **hybrid with** p521      | NIST Round 3 submission                       | 3            |                    5 | 0xfe77       | 1.3.9999.6.6.6              |
 | sphincssha2256ssimple                             | NIST Round 3 submission, v3.1 (June 10, 2022) | 3            |                    5 | 0xfec0       | 1.3.9999.6.6.12             |

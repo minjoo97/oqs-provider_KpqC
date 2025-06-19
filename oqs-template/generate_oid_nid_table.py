@@ -20,6 +20,18 @@ def gen_sig_table(oqslibdocdir):
            algyml = yaml.safe_load(f.read())
         liboqs_sigs[algyml['name']]=algyml
 
+  # KpqC 서명 알고리즘들 추가
+  liboqs_sigs['HAETAE'] = {
+      'name': 'HAETAE',
+      'spec-version': 'KpqC 2.0 submission',
+      'nist-round': 'KpqC'
+  }
+  liboqs_sigs['AIMer'] = {
+      'name': 'AIMer', 
+      'spec-version': 'KpqC 2.0 submission',
+      'nist-round': 'KpqC'
+  }
+
   table = [['Algorithm', 'Implementation Version',
           'NIST round', 'Claimed NIST Level', 'Code Point', 'OID']]
   claimed_nist_level = 0
@@ -92,6 +104,18 @@ def gen_kem_table(oqslibdocdir):
       liboqs_kems['SIDH']=liboqs_kems['SIKE']
   # TODO: Workaround for wrong upstream name for Kyber:
   liboqs_kems['CRYSTALS-Kyber']=liboqs_kems['Kyber']
+  
+  # KpqC 알고리즘들 추가
+  liboqs_kems['NTRU+'] = {
+      'name': 'NTRU+',
+      'spec-version': 'KpqC 2.0',
+      'nist-round': 'KpqC'
+  }
+  liboqs_kems['SMAUG-T'] = {
+      'name': 'SMAUG-T',
+      'spec-version': 'KpqC 2.0', 
+      'nist-round': 'KpqC'
+  }
 
   table_header = ['Family', 'Implementation Version', 'Variant', 'NIST round', 'Claimed NIST Level',
            'Code Point', 'Hybrid Elliptic Curve (if any)']

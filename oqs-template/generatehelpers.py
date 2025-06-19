@@ -20,6 +20,28 @@ def file_put_contents(filename, s, encoding=None):
         fh.write(s)
 
 def get_kem_nistlevel(alg, docsdir):
+    # KpqC 알고리즘들은 보안 레벨을 직접 지정
+    if alg['family'] == 'NTRU+':
+        name = alg['name_group']
+        if name == 'ntru_plus_kem576':
+            return 1
+        elif name == 'ntru_plus_kem768':
+            return 3
+        elif name == 'ntru_plus_kem864':
+            return 3
+        elif name == 'ntru_plus_kem1152':
+            return 5
+        return None
+    elif alg['family'] == 'SMAUG-T':
+        name = alg['name_group']
+        if name == 'smaug-t1':
+            return 1
+        elif name == 'smaug-t3':
+            return 3
+        elif name == 'smaug-t5':
+            return 5
+        return None
+
     # translate family names in generate.yml to directory names for liboqs algorithm datasheets
     if alg['family'] == 'CRYSTALS-Kyber': datasheetname = 'kyber'
     elif alg['family'] == 'SIDH': datasheetname = 'sike'
@@ -54,6 +76,26 @@ def get_kem_nistlevel(alg, docsdir):
     return None
 
 def get_sig_nistlevel(family, alg, docsdir):
+    # KpqC 서명 알고리즘들은 보안 레벨을 직접 지정
+    if family['family'] == 'HAETAE':
+        name = alg['name']
+        if name == 'haetae2':
+            return 1
+        elif name == 'haetae3':
+            return 3
+        elif name == 'haetae5':
+            return 5
+        return None
+    elif family['family'] == 'AIMer':
+        name = alg['name']
+        if name in ['aimer128s', 'aimer128f']:
+            return 1
+        elif name in ['aimer192s', 'aimer192f']:
+            return 3
+        elif name in ['aimer256s', 'aimer256f']:
+            return 5
+        return None
+
     # translate family names in generate.yml to directory names for liboqs algorithm datasheets
     if family['family'] == 'CRYSTALS-Dilithium': datasheetname = 'dilithium'
     elif family['family'] == 'SPHINCS-Haraka': datasheetname = 'sphincs'
