@@ -635,25 +635,25 @@ MAKE_DECODER(, "ntru_plus_kem1152", ntru_plus_kem1152, oqsx, SubjectPublicKeyInf
 
 MAKE_DECODER(_ecp, "p521_ntru_plus_kem1152", p521_ntru_plus_kem1152, oqsx, PrivateKeyInfo);
 MAKE_DECODER(_ecp, "p521_ntru_plus_kem1152", p521_ntru_plus_kem1152, oqsx, SubjectPublicKeyInfo);
-MAKE_DECODER(, "smaug-t1", smaug-t1, oqsx, PrivateKeyInfo);
-MAKE_DECODER(, "smaug-t1", smaug-t1, oqsx, SubjectPublicKeyInfo);
+MAKE_DECODER(, "smaug_t1", smaug_t1, oqsx, PrivateKeyInfo);
+MAKE_DECODER(, "smaug_t1", smaug_t1, oqsx, SubjectPublicKeyInfo);
 
-MAKE_DECODER(_ecp, "p256_smaug-t1", p256_smaug-t1, oqsx, PrivateKeyInfo);
-MAKE_DECODER(_ecp, "p256_smaug-t1", p256_smaug-t1, oqsx, SubjectPublicKeyInfo);
-MAKE_DECODER(_ecx, "x25519_smaug-t1", x25519_smaug-t1, oqsx, PrivateKeyInfo);
-MAKE_DECODER(_ecx, "x25519_smaug-t1", x25519_smaug-t1, oqsx, SubjectPublicKeyInfo);
-MAKE_DECODER(, "smaug-t3", smaug-t3, oqsx, PrivateKeyInfo);
-MAKE_DECODER(, "smaug-t3", smaug-t3, oqsx, SubjectPublicKeyInfo);
+MAKE_DECODER(_ecp, "p256_smaug_t1", p256_smaug_t1, oqsx, PrivateKeyInfo);
+MAKE_DECODER(_ecp, "p256_smaug_t1", p256_smaug_t1, oqsx, SubjectPublicKeyInfo);
+MAKE_DECODER(_ecx, "x25519_smaug_t1", x25519_smaug_t1, oqsx, PrivateKeyInfo);
+MAKE_DECODER(_ecx, "x25519_smaug_t1", x25519_smaug_t1, oqsx, SubjectPublicKeyInfo);
+MAKE_DECODER(, "smaug_t3", smaug_t3, oqsx, PrivateKeyInfo);
+MAKE_DECODER(, "smaug_t3", smaug_t3, oqsx, SubjectPublicKeyInfo);
 
-MAKE_DECODER(_ecp, "p384_smaug-t3", p384_smaug-t3, oqsx, PrivateKeyInfo);
-MAKE_DECODER(_ecp, "p384_smaug-t3", p384_smaug-t3, oqsx, SubjectPublicKeyInfo);
-MAKE_DECODER(_ecx, "x448_smaug-t3", x448_smaug-t3, oqsx, PrivateKeyInfo);
-MAKE_DECODER(_ecx, "x448_smaug-t3", x448_smaug-t3, oqsx, SubjectPublicKeyInfo);
-MAKE_DECODER(, "smaug-t5", smaug-t5, oqsx, PrivateKeyInfo);
-MAKE_DECODER(, "smaug-t5", smaug-t5, oqsx, SubjectPublicKeyInfo);
+MAKE_DECODER(_ecp, "p384_smaug_t3", p384_smaug_t3, oqsx, PrivateKeyInfo);
+MAKE_DECODER(_ecp, "p384_smaug_t3", p384_smaug_t3, oqsx, SubjectPublicKeyInfo);
+MAKE_DECODER(_ecx, "x448_smaug_t3", x448_smaug_t3, oqsx, PrivateKeyInfo);
+MAKE_DECODER(_ecx, "x448_smaug_t3", x448_smaug_t3, oqsx, SubjectPublicKeyInfo);
+MAKE_DECODER(, "smaug_t5", smaug_t5, oqsx, PrivateKeyInfo);
+MAKE_DECODER(, "smaug_t5", smaug_t5, oqsx, SubjectPublicKeyInfo);
 
-MAKE_DECODER(_ecp, "p521_smaug-t5", p521_smaug-t5, oqsx, PrivateKeyInfo);
-MAKE_DECODER(_ecp, "p521_smaug-t5", p521_smaug-t5, oqsx, SubjectPublicKeyInfo);
+MAKE_DECODER(_ecp, "p521_smaug_t5", p521_smaug_t5, oqsx, PrivateKeyInfo);
+MAKE_DECODER(_ecp, "p521_smaug_t5", p521_smaug_t5, oqsx, SubjectPublicKeyInfo);
 #endif /* OQS_KEM_ENCODERS */
 
 

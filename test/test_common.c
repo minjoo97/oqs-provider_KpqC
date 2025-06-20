@@ -57,11 +57,11 @@ const char *kHybridKEMAlgorithms[] = {
     "p384_ntru_plus_kem864",
     "x448_ntru_plus_kem864",
     "p521_ntru_plus_kem1152",
-    "p256_smaug-t1",
-    "x25519_smaug-t1",
-    "p384_smaug-t3",
-    "x448_smaug-t3",
-    "p521_smaug-t5",
+    "p256_smaug_t1",
+    "x25519_smaug_t1",
+    "p384_smaug_t3",
+    "x448_smaug_t3",
+    "p521_smaug_t5",
 NULL,
 };///// OQS_TEMPLATE_FRAGMENT_HYBRID_KEM_ALGS_END
 

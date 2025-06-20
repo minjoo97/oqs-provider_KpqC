@@ -1120,33 +1120,33 @@ static int oqsx_pki_priv_to_der(const void *vxkey, unsigned char **pder) {
 # define p521_ntru_plus_kem1152_evp_type     0
 # define p521_ntru_plus_kem1152_input_type    "p521_ntru_plus_kem1152"
 # define p521_ntru_plus_kem1152_pem_type      "p521_ntru_plus_kem1152"
-# define smaug-t1_evp_type     0
-# define smaug-t1_input_type    "smaug-t1"
-# define smaug-t1_pem_type      "smaug-t1"
+# define smaug_t1_evp_type     0
+# define smaug_t1_input_type    "smaug_t1"
+# define smaug_t1_pem_type      "smaug_t1"
 
-# define p256_smaug-t1_evp_type     0
-# define p256_smaug-t1_input_type    "p256_smaug-t1"
-# define p256_smaug-t1_pem_type      "p256_smaug-t1"
-# define x25519_smaug-t1_evp_type     0
-# define x25519_smaug-t1_input_type    "x25519_smaug-t1"
-# define x25519_smaug-t1_pem_type      "x25519_smaug-t1"
-# define smaug-t3_evp_type     0
-# define smaug-t3_input_type    "smaug-t3"
-# define smaug-t3_pem_type      "smaug-t3"
+# define p256_smaug_t1_evp_type     0
+# define p256_smaug_t1_input_type    "p256_smaug_t1"
+# define p256_smaug_t1_pem_type      "p256_smaug_t1"
+# define x25519_smaug_t1_evp_type     0
+# define x25519_smaug_t1_input_type    "x25519_smaug_t1"
+# define x25519_smaug_t1_pem_type      "x25519_smaug_t1"
+# define smaug_t3_evp_type     0
+# define smaug_t3_input_type    "smaug_t3"
+# define smaug_t3_pem_type      "smaug_t3"
 
-# define p384_smaug-t3_evp_type     0
-# define p384_smaug-t3_input_type    "p384_smaug-t3"
-# define p384_smaug-t3_pem_type      "p384_smaug-t3"
-# define x448_smaug-t3_evp_type     0
-# define x448_smaug-t3_input_type    "x448_smaug-t3"
-# define x448_smaug-t3_pem_type      "x448_smaug-t3"
-# define smaug-t5_evp_type     0
-# define smaug-t5_input_type    "smaug-t5"
-# define smaug-t5_pem_type      "smaug-t5"
+# define p384_smaug_t3_evp_type     0
+# define p384_smaug_t3_input_type    "p384_smaug_t3"
+# define p384_smaug_t3_pem_type      "p384_smaug_t3"
+# define x448_smaug_t3_evp_type     0
+# define x448_smaug_t3_input_type    "x448_smaug_t3"
+# define x448_smaug_t3_pem_type      "x448_smaug_t3"
+# define smaug_t5_evp_type     0
+# define smaug_t5_input_type    "smaug_t5"
+# define smaug_t5_pem_type      "smaug_t5"
 
-# define p521_smaug-t5_evp_type     0
-# define p521_smaug-t5_input_type    "p521_smaug-t5"
-# define p521_smaug-t5_pem_type      "p521_smaug-t5"
+# define p521_smaug_t5_evp_type     0
+# define p521_smaug_t5_input_type    "p521_smaug_t5"
+# define p521_smaug_t5_pem_type      "p521_smaug_t5"
 
 
 # define mldsa44_evp_type       0
@@ -2392,65 +2392,65 @@ MAKE_ENCODER(_ecp, p521_ntru_plus_kem1152, oqsx, PrivateKeyInfo, pem);
 MAKE_ENCODER(_ecp, p521_ntru_plus_kem1152, oqsx, SubjectPublicKeyInfo, der);
 MAKE_ENCODER(_ecp, p521_ntru_plus_kem1152, oqsx, SubjectPublicKeyInfo, pem);
 MAKE_TEXT_ENCODER(_ecp, p521_ntru_plus_kem1152);
-MAKE_ENCODER(, smaug-t1, oqsx, EncryptedPrivateKeyInfo, der);
-MAKE_ENCODER(, smaug-t1, oqsx, EncryptedPrivateKeyInfo, pem);
-MAKE_ENCODER(, smaug-t1, oqsx, PrivateKeyInfo, der);
-MAKE_ENCODER(, smaug-t1, oqsx, PrivateKeyInfo, pem);
-MAKE_ENCODER(, smaug-t1, oqsx, SubjectPublicKeyInfo, der);
-MAKE_ENCODER(, smaug-t1, oqsx, SubjectPublicKeyInfo, pem);
-MAKE_TEXT_ENCODER(, smaug-t1);
+MAKE_ENCODER(, smaug_t1, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, smaug_t1, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, smaug_t1, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, smaug_t1, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, smaug_t1, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, smaug_t1, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, smaug_t1);
 
-MAKE_ENCODER(_ecp, p256_smaug-t1, oqsx, EncryptedPrivateKeyInfo, der);
-MAKE_ENCODER(_ecp, p256_smaug-t1, oqsx, EncryptedPrivateKeyInfo, pem);
-MAKE_ENCODER(_ecp, p256_smaug-t1, oqsx, PrivateKeyInfo, der);
-MAKE_ENCODER(_ecp, p256_smaug-t1, oqsx, PrivateKeyInfo, pem);
-MAKE_ENCODER(_ecp, p256_smaug-t1, oqsx, SubjectPublicKeyInfo, der);
-MAKE_ENCODER(_ecp, p256_smaug-t1, oqsx, SubjectPublicKeyInfo, pem);
-MAKE_TEXT_ENCODER(_ecp, p256_smaug-t1);
-MAKE_ENCODER(_ecx, x25519_smaug-t1, oqsx, EncryptedPrivateKeyInfo, der);
-MAKE_ENCODER(_ecx, x25519_smaug-t1, oqsx, EncryptedPrivateKeyInfo, pem);
-MAKE_ENCODER(_ecx, x25519_smaug-t1, oqsx, PrivateKeyInfo, der);
-MAKE_ENCODER(_ecx, x25519_smaug-t1, oqsx, PrivateKeyInfo, pem);
-MAKE_ENCODER(_ecx, x25519_smaug-t1, oqsx, SubjectPublicKeyInfo, der);
-MAKE_ENCODER(_ecx, x25519_smaug-t1, oqsx, SubjectPublicKeyInfo, pem);
-MAKE_TEXT_ENCODER(_ecx, x25519_smaug-t1);
-MAKE_ENCODER(, smaug-t3, oqsx, EncryptedPrivateKeyInfo, der);
-MAKE_ENCODER(, smaug-t3, oqsx, EncryptedPrivateKeyInfo, pem);
-MAKE_ENCODER(, smaug-t3, oqsx, PrivateKeyInfo, der);
-MAKE_ENCODER(, smaug-t3, oqsx, PrivateKeyInfo, pem);
-MAKE_ENCODER(, smaug-t3, oqsx, SubjectPublicKeyInfo, der);
-MAKE_ENCODER(, smaug-t3, oqsx, SubjectPublicKeyInfo, pem);
-MAKE_TEXT_ENCODER(, smaug-t3);
+MAKE_ENCODER(_ecp, p256_smaug_t1, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(_ecp, p256_smaug_t1, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(_ecp, p256_smaug_t1, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(_ecp, p256_smaug_t1, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(_ecp, p256_smaug_t1, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(_ecp, p256_smaug_t1, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(_ecp, p256_smaug_t1);
+MAKE_ENCODER(_ecx, x25519_smaug_t1, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(_ecx, x25519_smaug_t1, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(_ecx, x25519_smaug_t1, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(_ecx, x25519_smaug_t1, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(_ecx, x25519_smaug_t1, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(_ecx, x25519_smaug_t1, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(_ecx, x25519_smaug_t1);
+MAKE_ENCODER(, smaug_t3, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, smaug_t3, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, smaug_t3, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, smaug_t3, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, smaug_t3, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, smaug_t3, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, smaug_t3);
 
-MAKE_ENCODER(_ecp, p384_smaug-t3, oqsx, EncryptedPrivateKeyInfo, der);
-MAKE_ENCODER(_ecp, p384_smaug-t3, oqsx, EncryptedPrivateKeyInfo, pem);
-MAKE_ENCODER(_ecp, p384_smaug-t3, oqsx, PrivateKeyInfo, der);
-MAKE_ENCODER(_ecp, p384_smaug-t3, oqsx, PrivateKeyInfo, pem);
-MAKE_ENCODER(_ecp, p384_smaug-t3, oqsx, SubjectPublicKeyInfo, der);
-MAKE_ENCODER(_ecp, p384_smaug-t3, oqsx, SubjectPublicKeyInfo, pem);
-MAKE_TEXT_ENCODER(_ecp, p384_smaug-t3);
-MAKE_ENCODER(_ecx, x448_smaug-t3, oqsx, EncryptedPrivateKeyInfo, der);
-MAKE_ENCODER(_ecx, x448_smaug-t3, oqsx, EncryptedPrivateKeyInfo, pem);
-MAKE_ENCODER(_ecx, x448_smaug-t3, oqsx, PrivateKeyInfo, der);
-MAKE_ENCODER(_ecx, x448_smaug-t3, oqsx, PrivateKeyInfo, pem);
-MAKE_ENCODER(_ecx, x448_smaug-t3, oqsx, SubjectPublicKeyInfo, der);
-MAKE_ENCODER(_ecx, x448_smaug-t3, oqsx, SubjectPublicKeyInfo, pem);
-MAKE_TEXT_ENCODER(_ecx, x448_smaug-t3);
-MAKE_ENCODER(, smaug-t5, oqsx, EncryptedPrivateKeyInfo, der);
-MAKE_ENCODER(, smaug-t5, oqsx, EncryptedPrivateKeyInfo, pem);
-MAKE_ENCODER(, smaug-t5, oqsx, PrivateKeyInfo, der);
-MAKE_ENCODER(, smaug-t5, oqsx, PrivateKeyInfo, pem);
-MAKE_ENCODER(, smaug-t5, oqsx, SubjectPublicKeyInfo, der);
-MAKE_ENCODER(, smaug-t5, oqsx, SubjectPublicKeyInfo, pem);
-MAKE_TEXT_ENCODER(, smaug-t5);
+MAKE_ENCODER(_ecp, p384_smaug_t3, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(_ecp, p384_smaug_t3, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(_ecp, p384_smaug_t3, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(_ecp, p384_smaug_t3, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(_ecp, p384_smaug_t3, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(_ecp, p384_smaug_t3, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(_ecp, p384_smaug_t3);
+MAKE_ENCODER(_ecx, x448_smaug_t3, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(_ecx, x448_smaug_t3, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(_ecx, x448_smaug_t3, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(_ecx, x448_smaug_t3, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(_ecx, x448_smaug_t3, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(_ecx, x448_smaug_t3, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(_ecx, x448_smaug_t3);
+MAKE_ENCODER(, smaug_t5, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(, smaug_t5, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(, smaug_t5, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(, smaug_t5, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(, smaug_t5, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(, smaug_t5, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(, smaug_t5);
 
-MAKE_ENCODER(_ecp, p521_smaug-t5, oqsx, EncryptedPrivateKeyInfo, der);
-MAKE_ENCODER(_ecp, p521_smaug-t5, oqsx, EncryptedPrivateKeyInfo, pem);
-MAKE_ENCODER(_ecp, p521_smaug-t5, oqsx, PrivateKeyInfo, der);
-MAKE_ENCODER(_ecp, p521_smaug-t5, oqsx, PrivateKeyInfo, pem);
-MAKE_ENCODER(_ecp, p521_smaug-t5, oqsx, SubjectPublicKeyInfo, der);
-MAKE_ENCODER(_ecp, p521_smaug-t5, oqsx, SubjectPublicKeyInfo, pem);
-MAKE_TEXT_ENCODER(_ecp, p521_smaug-t5);
+MAKE_ENCODER(_ecp, p521_smaug_t5, oqsx, EncryptedPrivateKeyInfo, der);
+MAKE_ENCODER(_ecp, p521_smaug_t5, oqsx, EncryptedPrivateKeyInfo, pem);
+MAKE_ENCODER(_ecp, p521_smaug_t5, oqsx, PrivateKeyInfo, der);
+MAKE_ENCODER(_ecp, p521_smaug_t5, oqsx, PrivateKeyInfo, pem);
+MAKE_ENCODER(_ecp, p521_smaug_t5, oqsx, SubjectPublicKeyInfo, der);
+MAKE_ENCODER(_ecp, p521_smaug_t5, oqsx, SubjectPublicKeyInfo, pem);
+MAKE_TEXT_ENCODER(_ecp, p521_smaug_t5);
 #endif /* OQS_KEM_ENCODERS */
 
 MAKE_ENCODER(, mldsa44, oqsx, EncryptedPrivateKeyInfo, der);

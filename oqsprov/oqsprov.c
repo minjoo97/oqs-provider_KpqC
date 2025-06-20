@@ -65,7 +65,7 @@ const char* oqs_oid_alg_list[OQS_OID_CNT] =
 {
 
 #ifdef OQS_KEM_ENCODERS
-NULL, "frodo640aes",NULL, "p256_frodo640aes",NULL, "x25519_frodo640aes",NULL, "frodo640shake",NULL, "p256_frodo640shake",NULL, "x25519_frodo640shake",NULL, "frodo976aes",NULL, "p384_frodo976aes",NULL, "x448_frodo976aes",NULL, "frodo976shake",NULL, "p384_frodo976shake",NULL, "x448_frodo976shake",NULL, "frodo1344aes",NULL, "p521_frodo1344aes",NULL, "frodo1344shake",NULL, "p521_frodo1344shake","2.16.840.1.101.3.4.4.1", "mlkem512","1.3.6.1.4.1.22554.5.7.1", "p256_mlkem512","1.3.6.1.4.1.22554.5.8.1", "x25519_mlkem512","2.16.840.1.101.3.4.4.2", "mlkem768",NULL, "p384_mlkem768",NULL, "x448_mlkem768",NULL, "X25519MLKEM768",NULL, "SecP256r1MLKEM768","2.16.840.1.101.3.4.4.3", "mlkem1024",NULL, "p521_mlkem1024","1.3.6.1.4.1.42235.6", "SecP384r1MLKEM1024",NULL, "bikel1",NULL, "p256_bikel1",NULL, "x25519_bikel1",NULL, "bikel3",NULL, "p384_bikel3",NULL, "x448_bikel3",NULL, "bikel5",NULL, "p521_bikel5","1.3.9999.12.1.1", "ntru_plus_kem576",NULL, "p256_ntru_plus_kem576",NULL, "x25519_ntru_plus_kem576","1.3.9999.12.2.1", "ntru_plus_kem768",NULL, "p384_ntru_plus_kem768",NULL, "x448_ntru_plus_kem768","1.3.9999.12.3.1", "ntru_plus_kem864",NULL, "p384_ntru_plus_kem864",NULL, "x448_ntru_plus_kem864","1.3.9999.12.4.1", "ntru_plus_kem1152",NULL, "p521_ntru_plus_kem1152","1.3.9999.13.1.1", "smaug-t1",NULL, "p256_smaug-t1",NULL, "x25519_smaug-t1","1.3.9999.13.2.1", "smaug-t3",NULL, "p384_smaug-t3",NULL, "x448_smaug-t3","1.3.9999.13.3.1", "smaug-t5",NULL, "p521_smaug-t5",
+NULL, "frodo640aes",NULL, "p256_frodo640aes",NULL, "x25519_frodo640aes",NULL, "frodo640shake",NULL, "p256_frodo640shake",NULL, "x25519_frodo640shake",NULL, "frodo976aes",NULL, "p384_frodo976aes",NULL, "x448_frodo976aes",NULL, "frodo976shake",NULL, "p384_frodo976shake",NULL, "x448_frodo976shake",NULL, "frodo1344aes",NULL, "p521_frodo1344aes",NULL, "frodo1344shake",NULL, "p521_frodo1344shake","2.16.840.1.101.3.4.4.1", "mlkem512","1.3.6.1.4.1.22554.5.7.1", "p256_mlkem512","1.3.6.1.4.1.22554.5.8.1", "x25519_mlkem512","2.16.840.1.101.3.4.4.2", "mlkem768",NULL, "p384_mlkem768",NULL, "x448_mlkem768",NULL, "X25519MLKEM768",NULL, "SecP256r1MLKEM768","2.16.840.1.101.3.4.4.3", "mlkem1024",NULL, "p521_mlkem1024","1.3.6.1.4.1.42235.6", "SecP384r1MLKEM1024",NULL, "bikel1",NULL, "p256_bikel1",NULL, "x25519_bikel1",NULL, "bikel3",NULL, "p384_bikel3",NULL, "x448_bikel3",NULL, "bikel5",NULL, "p521_bikel5","1.3.9999.12.1.1", "ntru_plus_kem576",NULL, "p256_ntru_plus_kem576",NULL, "x25519_ntru_plus_kem576","1.3.9999.12.2.1", "ntru_plus_kem768",NULL, "p384_ntru_plus_kem768",NULL, "x448_ntru_plus_kem768","1.3.9999.12.3.1", "ntru_plus_kem864",NULL, "p384_ntru_plus_kem864",NULL, "x448_ntru_plus_kem864","1.3.9999.12.4.1", "ntru_plus_kem1152",NULL, "p521_ntru_plus_kem1152","1.3.9999.13.1.1", "smaug_t1",NULL, "p256_smaug_t1",NULL, "x25519_smaug_t1","1.3.9999.13.2.1", "smaug_t3",NULL, "p384_smaug_t3",NULL, "x448_smaug_t3","1.3.9999.13.3.1", "smaug_t5",NULL, "p521_smaug_t5",
 
 #endif /* OQS_KEM_ENCODERS */
 
@@ -230,17 +230,17 @@ if ((envval = getenv("OQS_OID_X448_NTRU_PLUS_KEM864"))) oqs_oid_alg_list[86] = e
 if ((envval = getenv("OQS_OID_NTRU_PLUS_KEM1152"))) oqs_oid_alg_list[88] = envval;
 
 if ((envval = getenv("OQS_OID_P521_NTRU_PLUS_KEM1152"))) oqs_oid_alg_list[90] = envval;
-if ((envval = getenv("OQS_OID_SMAUG-T1"))) oqs_oid_alg_list[92] = envval;
+if ((envval = getenv("OQS_OID_SMAUG_T1"))) oqs_oid_alg_list[92] = envval;
 
-if ((envval = getenv("OQS_OID_P256_SMAUG-T1"))) oqs_oid_alg_list[94] = envval;
-if ((envval = getenv("OQS_OID_X25519_SMAUG-T1"))) oqs_oid_alg_list[96] = envval;
-if ((envval = getenv("OQS_OID_SMAUG-T3"))) oqs_oid_alg_list[98] = envval;
+if ((envval = getenv("OQS_OID_P256_SMAUG_T1"))) oqs_oid_alg_list[94] = envval;
+if ((envval = getenv("OQS_OID_X25519_SMAUG_T1"))) oqs_oid_alg_list[96] = envval;
+if ((envval = getenv("OQS_OID_SMAUG_T3"))) oqs_oid_alg_list[98] = envval;
 
-if ((envval = getenv("OQS_OID_P384_SMAUG-T3"))) oqs_oid_alg_list[100] = envval;
-if ((envval = getenv("OQS_OID_X448_SMAUG-T3"))) oqs_oid_alg_list[102] = envval;
-if ((envval = getenv("OQS_OID_SMAUG-T5"))) oqs_oid_alg_list[104] = envval;
+if ((envval = getenv("OQS_OID_P384_SMAUG_T3"))) oqs_oid_alg_list[100] = envval;
+if ((envval = getenv("OQS_OID_X448_SMAUG_T3"))) oqs_oid_alg_list[102] = envval;
+if ((envval = getenv("OQS_OID_SMAUG_T5"))) oqs_oid_alg_list[104] = envval;
 
-if ((envval = getenv("OQS_OID_P521_SMAUG-T5"))) oqs_oid_alg_list[106] = envval;
+if ((envval = getenv("OQS_OID_P521_SMAUG_T5"))) oqs_oid_alg_list[106] = envval;
 
 #define OQS_KEMOID_CNT 106+2
 #else
@@ -597,38 +597,38 @@ static const OSSL_ALGORITHM oqsprovider_asym_kems[] = {
     KEMBASEALG(bikel5, 256)
     KEMHYBALG(p521_bikel5, 256)
 #endif
-#ifdef OQS_ENABLE_KEM_ntrupkem_576
+#ifdef OQS_ENABLE_KEM_ntru_plus_kem576
     KEMBASEALG(ntru_plus_kem576, 128)
     KEMHYBALG(p256_ntru_plus_kem576, 128)
     KEMHYBALG(x25519_ntru_plus_kem576, 128)
 #endif
-#ifdef OQS_ENABLE_KEM_ntrupkem_768
+#ifdef OQS_ENABLE_KEM_ntru_plus_kem768
     KEMBASEALG(ntru_plus_kem768, 192)
     KEMHYBALG(p384_ntru_plus_kem768, 192)
     KEMHYBALG(x448_ntru_plus_kem768, 192)
 #endif
-#ifdef OQS_ENABLE_KEM_ntrupkem_864
+#ifdef OQS_ENABLE_KEM_ntru_plus_kem864
     KEMBASEALG(ntru_plus_kem864, 192)
     KEMHYBALG(p384_ntru_plus_kem864, 192)
     KEMHYBALG(x448_ntru_plus_kem864, 192)
 #endif
-#ifdef OQS_ENABLE_KEM_ntrupkem_1152
+#ifdef OQS_ENABLE_KEM_ntru_plus_kem1152
     KEMBASEALG(ntru_plus_kem1152, 256)
     KEMHYBALG(p521_ntru_plus_kem1152, 256)
 #endif
 #ifdef OQS_ENABLE_KEM_smaug_t1
-    KEMBASEALG(smaug-t1, 128)
-    KEMHYBALG(p256_smaug-t1, 128)
-    KEMHYBALG(x25519_smaug-t1, 128)
+    KEMBASEALG(smaug_t1, 128)
+    KEMHYBALG(p256_smaug_t1, 128)
+    KEMHYBALG(x25519_smaug_t1, 128)
 #endif
 #ifdef OQS_ENABLE_KEM_smaug_t3
-    KEMBASEALG(smaug-t3, 192)
-    KEMHYBALG(p384_smaug-t3, 192)
-    KEMHYBALG(x448_smaug-t3, 192)
+    KEMBASEALG(smaug_t3, 192)
+    KEMHYBALG(p384_smaug_t3, 192)
+    KEMHYBALG(x448_smaug_t3, 192)
 #endif
 #ifdef OQS_ENABLE_KEM_smaug_t5
-    KEMBASEALG(smaug-t5, 256)
-    KEMHYBALG(p521_smaug-t5, 256)
+    KEMBASEALG(smaug_t5, 256)
+    KEMHYBALG(p521_smaug_t5, 256)
 #endif
 // clang-format on
 ///// OQS_TEMPLATE_FRAGMENT_KEM_FUNCTIONS_END
@@ -865,45 +865,45 @@ static const OSSL_ALGORITHM oqsprovider_keymgmt[] = {
 
     KEMKMHYBALG(p521_bikel5, 256, ecp)
 #endif
-#ifdef OQS_ENABLE_KEM_ntrupkem_576
+#ifdef OQS_ENABLE_KEM_ntru_plus_kem576
     KEMKMALG(ntru_plus_kem576, 128)
 
     KEMKMHYBALG(p256_ntru_plus_kem576, 128, ecp)
     KEMKMHYBALG(x25519_ntru_plus_kem576, 128, ecx)
 #endif
-#ifdef OQS_ENABLE_KEM_ntrupkem_768
+#ifdef OQS_ENABLE_KEM_ntru_plus_kem768
     KEMKMALG(ntru_plus_kem768, 192)
 
     KEMKMHYBALG(p384_ntru_plus_kem768, 192, ecp)
     KEMKMHYBALG(x448_ntru_plus_kem768, 192, ecx)
 #endif
-#ifdef OQS_ENABLE_KEM_ntrupkem_864
+#ifdef OQS_ENABLE_KEM_ntru_plus_kem864
     KEMKMALG(ntru_plus_kem864, 192)
 
     KEMKMHYBALG(p384_ntru_plus_kem864, 192, ecp)
     KEMKMHYBALG(x448_ntru_plus_kem864, 192, ecx)
 #endif
-#ifdef OQS_ENABLE_KEM_ntrupkem_1152
+#ifdef OQS_ENABLE_KEM_ntru_plus_kem1152
     KEMKMALG(ntru_plus_kem1152, 256)
 
     KEMKMHYBALG(p521_ntru_plus_kem1152, 256, ecp)
 #endif
 #ifdef OQS_ENABLE_KEM_smaug_t1
-    KEMKMALG(smaug-t1, 128)
+    KEMKMALG(smaug_t1, 128)
 
-    KEMKMHYBALG(p256_smaug-t1, 128, ecp)
-    KEMKMHYBALG(x25519_smaug-t1, 128, ecx)
+    KEMKMHYBALG(p256_smaug_t1, 128, ecp)
+    KEMKMHYBALG(x25519_smaug_t1, 128, ecx)
 #endif
 #ifdef OQS_ENABLE_KEM_smaug_t3
-    KEMKMALG(smaug-t3, 192)
+    KEMKMALG(smaug_t3, 192)
 
-    KEMKMHYBALG(p384_smaug-t3, 192, ecp)
-    KEMKMHYBALG(x448_smaug-t3, 192, ecx)
+    KEMKMHYBALG(p384_smaug_t3, 192, ecp)
+    KEMKMHYBALG(x448_smaug_t3, 192, ecx)
 #endif
 #ifdef OQS_ENABLE_KEM_smaug_t5
-    KEMKMALG(smaug-t5, 256)
+    KEMKMALG(smaug_t5, 256)
 
-    KEMKMHYBALG(p521_smaug-t5, 256, ecp)
+    KEMKMHYBALG(p521_smaug_t5, 256, ecp)
 #endif
 // clang-format on
 ///// OQS_TEMPLATE_FRAGMENT_KEYMGMT_FUNCTIONS_END

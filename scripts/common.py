@@ -8,9 +8,9 @@ from packaging.version import Version
 key_exchanges_oqs = [
 ##### OQS_TEMPLATE_FRAGMENT_KEX_ALGS_START
     # post-quantum key exchanges
-    'frodo640aes','frodo640shake','frodo976aes','frodo976shake','frodo1344aes','frodo1344shake','mlkem512','mlkem768','mlkem1024','bikel1','bikel3','bikel5','ntru_plus_kem576','ntru_plus_kem768','ntru_plus_kem864','ntru_plus_kem1152','smaug-t1','smaug-t3','smaug-t5',
+    'frodo640aes','frodo640shake','frodo976aes','frodo976shake','frodo1344aes','frodo1344shake','mlkem512','mlkem768','mlkem1024','bikel1','bikel3','bikel5','ntru_plus_kem576','ntru_plus_kem768','ntru_plus_kem864','ntru_plus_kem1152','smaug_t1','smaug_t3','smaug_t5',
     # post-quantum + classical key exchanges
-    'p256_frodo640aes','x25519_frodo640aes','p256_frodo640shake','x25519_frodo640shake','p384_frodo976aes','x448_frodo976aes','p384_frodo976shake','x448_frodo976shake','p521_frodo1344aes','p521_frodo1344shake','p256_mlkem512','x25519_mlkem512','p384_mlkem768','x448_mlkem768','X25519MLKEM768','SecP256r1MLKEM768','p521_mlkem1024','SecP384r1MLKEM1024','p256_bikel1','x25519_bikel1','p384_bikel3','x448_bikel3','p521_bikel5','p256_ntru_plus_kem576','x25519_ntru_plus_kem576','p384_ntru_plus_kem768','x448_ntru_plus_kem768','p384_ntru_plus_kem864','x448_ntru_plus_kem864','p521_ntru_plus_kem1152','p256_smaug-t1','x25519_smaug-t1','p384_smaug-t3','x448_smaug-t3','p521_smaug-t5',
+    'p256_frodo640aes','x25519_frodo640aes','p256_frodo640shake','x25519_frodo640shake','p384_frodo976aes','x448_frodo976aes','p384_frodo976shake','x448_frodo976shake','p521_frodo1344aes','p521_frodo1344shake','p256_mlkem512','x25519_mlkem512','p384_mlkem768','x448_mlkem768','X25519MLKEM768','SecP256r1MLKEM768','p521_mlkem1024','SecP384r1MLKEM1024','p256_bikel1','x25519_bikel1','p384_bikel3','x448_bikel3','p521_bikel5','p256_ntru_plus_kem576','x25519_ntru_plus_kem576','p384_ntru_plus_kem768','x448_ntru_plus_kem768','p384_ntru_plus_kem864','x448_ntru_plus_kem864','p521_ntru_plus_kem1152','p256_smaug_t1','x25519_smaug_t1','p384_smaug_t3','x448_smaug_t3','p521_smaug_t5',
 ##### OQS_TEMPLATE_FRAGMENT_KEX_ALGS_END
 ]
 signatures_oqs = [

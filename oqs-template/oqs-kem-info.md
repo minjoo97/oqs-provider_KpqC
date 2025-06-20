@@ -107,11 +107,11 @@
 | NTRU+          | KpqC 2.0                 | ntru_plus_kem864  | KpqC         |                    3 | 65088        |                                  |
 | NTRU+          | KpqC 2.0                 | ntru_plus_kem864  | KpqC         |                    3 | 65089        | secp384_r1                       |
 | NTRU+          | KpqC 2.0                 | ntru_plus_kem864  | KpqC         |                    3 | 65090        | x448                             |
-| SMAUG-T        | KpqC 2.0                 | smaug-t1          | KpqC         |                    1 | 65093        |                                  |
-| SMAUG-T        | KpqC 2.0                 | smaug-t1          | KpqC         |                    1 | 65094        | secp256_r1                       |
-| SMAUG-T        | KpqC 2.0                 | smaug-t1          | KpqC         |                    1 | 65095        | x25519                           |
-| SMAUG-T        | KpqC 2.0                 | smaug-t3          | KpqC         |                    3 | 65096        |                                  |
-| SMAUG-T        | KpqC 2.0                 | smaug-t3          | KpqC         |                    3 | 65097        | secp384_r1                       |
-| SMAUG-T        | KpqC 2.0                 | smaug-t3          | KpqC         |                    3 | 65098        | x448                             |
-| SMAUG-T        | KpqC 2.0                 | smaug-t5          | KpqC         |                    5 | 65099        |                                  |
-| SMAUG-T        | KpqC 2.0                 | smaug-t5          | KpqC         |                    5 | 65100        | secp521_r1                       |
+| SMAUG-T        | KpqC 2.0                 | smaug_t1          | KpqC         |                    1 | 65093        |                                  |
+| SMAUG-T        | KpqC 2.0                 | smaug_t1          | KpqC         |                    1 | 65094        | secp256_r1                       |
+| SMAUG-T        | KpqC 2.0                 | smaug_t1          | KpqC         |                    1 | 65095        | x25519                           |
+| SMAUG-T        | KpqC 2.0                 | smaug_t3          | KpqC         |                    3 | 65096        |                                  |
+| SMAUG-T        | KpqC 2.0                 | smaug_t3          | KpqC         |                    3 | 65097        | secp384_r1                       |
+| SMAUG-T        | KpqC 2.0                 | smaug_t3          | KpqC         |                    3 | 65098        | x448                             |
+| SMAUG-T        | KpqC 2.0                 | smaug_t5          | KpqC         |                    5 | 65099        |                                  |
+| SMAUG-T        | KpqC 2.0                 | smaug_t5          | KpqC         |                    5 | 65100        | secp521_r1                       |

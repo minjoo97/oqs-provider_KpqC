@@ -115,52 +115,52 @@ DECODER_w_structure("bikel5", der, SubjectPublicKeyInfo, bikel5),
 DECODER_w_structure("p521_bikel5", der, PrivateKeyInfo, p521_bikel5),
 DECODER_w_structure("p521_bikel5", der, SubjectPublicKeyInfo, p521_bikel5),
 #endif
-#ifdef OQS_ENABLE_KEM_ntrupkem_576
+#ifdef OQS_ENABLE_KEM_ntru_plus_kem576
 DECODER_w_structure("ntru_plus_kem576", der, PrivateKeyInfo, ntru_plus_kem576),
 DECODER_w_structure("ntru_plus_kem576", der, SubjectPublicKeyInfo, ntru_plus_kem576),
 DECODER_w_structure("p256_ntru_plus_kem576", der, PrivateKeyInfo, p256_ntru_plus_kem576),
 DECODER_w_structure("p256_ntru_plus_kem576", der, SubjectPublicKeyInfo, p256_ntru_plus_kem576),DECODER_w_structure("x25519_ntru_plus_kem576", der, PrivateKeyInfo, x25519_ntru_plus_kem576),
 DECODER_w_structure("x25519_ntru_plus_kem576", der, SubjectPublicKeyInfo, x25519_ntru_plus_kem576),
 #endif
-#ifdef OQS_ENABLE_KEM_ntrupkem_768
+#ifdef OQS_ENABLE_KEM_ntru_plus_kem768
 DECODER_w_structure("ntru_plus_kem768", der, PrivateKeyInfo, ntru_plus_kem768),
 DECODER_w_structure("ntru_plus_kem768", der, SubjectPublicKeyInfo, ntru_plus_kem768),
 DECODER_w_structure("p384_ntru_plus_kem768", der, PrivateKeyInfo, p384_ntru_plus_kem768),
 DECODER_w_structure("p384_ntru_plus_kem768", der, SubjectPublicKeyInfo, p384_ntru_plus_kem768),DECODER_w_structure("x448_ntru_plus_kem768", der, PrivateKeyInfo, x448_ntru_plus_kem768),
 DECODER_w_structure("x448_ntru_plus_kem768", der, SubjectPublicKeyInfo, x448_ntru_plus_kem768),
 #endif
-#ifdef OQS_ENABLE_KEM_ntrupkem_864
+#ifdef OQS_ENABLE_KEM_ntru_plus_kem864
 DECODER_w_structure("ntru_plus_kem864", der, PrivateKeyInfo, ntru_plus_kem864),
 DECODER_w_structure("ntru_plus_kem864", der, SubjectPublicKeyInfo, ntru_plus_kem864),
 DECODER_w_structure("p384_ntru_plus_kem864", der, PrivateKeyInfo, p384_ntru_plus_kem864),
 DECODER_w_structure("p384_ntru_plus_kem864", der, SubjectPublicKeyInfo, p384_ntru_plus_kem864),DECODER_w_structure("x448_ntru_plus_kem864", der, PrivateKeyInfo, x448_ntru_plus_kem864),
 DECODER_w_structure("x448_ntru_plus_kem864", der, SubjectPublicKeyInfo, x448_ntru_plus_kem864),
 #endif
-#ifdef OQS_ENABLE_KEM_ntrupkem_1152
+#ifdef OQS_ENABLE_KEM_ntru_plus_kem1152
 DECODER_w_structure("ntru_plus_kem1152", der, PrivateKeyInfo, ntru_plus_kem1152),
 DECODER_w_structure("ntru_plus_kem1152", der, SubjectPublicKeyInfo, ntru_plus_kem1152),
 DECODER_w_structure("p521_ntru_plus_kem1152", der, PrivateKeyInfo, p521_ntru_plus_kem1152),
 DECODER_w_structure("p521_ntru_plus_kem1152", der, SubjectPublicKeyInfo, p521_ntru_plus_kem1152),
 #endif
 #ifdef OQS_ENABLE_KEM_smaug_t1
-DECODER_w_structure("smaug-t1", der, PrivateKeyInfo, smaug-t1),
-DECODER_w_structure("smaug-t1", der, SubjectPublicKeyInfo, smaug-t1),
-DECODER_w_structure("p256_smaug-t1", der, PrivateKeyInfo, p256_smaug-t1),
-DECODER_w_structure("p256_smaug-t1", der, SubjectPublicKeyInfo, p256_smaug-t1),DECODER_w_structure("x25519_smaug-t1", der, PrivateKeyInfo, x25519_smaug-t1),
-DECODER_w_structure("x25519_smaug-t1", der, SubjectPublicKeyInfo, x25519_smaug-t1),
+DECODER_w_structure("smaug_t1", der, PrivateKeyInfo, smaug_t1),
+DECODER_w_structure("smaug_t1", der, SubjectPublicKeyInfo, smaug_t1),
+DECODER_w_structure("p256_smaug_t1", der, PrivateKeyInfo, p256_smaug_t1),
+DECODER_w_structure("p256_smaug_t1", der, SubjectPublicKeyInfo, p256_smaug_t1),DECODER_w_structure("x25519_smaug_t1", der, PrivateKeyInfo, x25519_smaug_t1),
+DECODER_w_structure("x25519_smaug_t1", der, SubjectPublicKeyInfo, x25519_smaug_t1),
 #endif
 #ifdef OQS_ENABLE_KEM_smaug_t3
-DECODER_w_structure("smaug-t3", der, PrivateKeyInfo, smaug-t3),
-DECODER_w_structure("smaug-t3", der, SubjectPublicKeyInfo, smaug-t3),
-DECODER_w_structure("p384_smaug-t3", der, PrivateKeyInfo, p384_smaug-t3),
-DECODER_w_structure("p384_smaug-t3", der, SubjectPublicKeyInfo, p384_smaug-t3),DECODER_w_structure("x448_smaug-t3", der, PrivateKeyInfo, x448_smaug-t3),
-DECODER_w_structure("x448_smaug-t3", der, SubjectPublicKeyInfo, x448_smaug-t3),
+DECODER_w_structure("smaug_t3", der, PrivateKeyInfo, smaug_t3),
+DECODER_w_structure("smaug_t3", der, SubjectPublicKeyInfo, smaug_t3),
+DECODER_w_structure("p384_smaug_t3", der, PrivateKeyInfo, p384_smaug_t3),
+DECODER_w_structure("p384_smaug_t3", der, SubjectPublicKeyInfo, p384_smaug_t3),DECODER_w_structure("x448_smaug_t3", der, PrivateKeyInfo, x448_smaug_t3),
+DECODER_w_structure("x448_smaug_t3", der, SubjectPublicKeyInfo, x448_smaug_t3),
 #endif
 #ifdef OQS_ENABLE_KEM_smaug_t5
-DECODER_w_structure("smaug-t5", der, PrivateKeyInfo, smaug-t5),
-DECODER_w_structure("smaug-t5", der, SubjectPublicKeyInfo, smaug-t5),
-DECODER_w_structure("p521_smaug-t5", der, PrivateKeyInfo, p521_smaug-t5),
-DECODER_w_structure("p521_smaug-t5", der, SubjectPublicKeyInfo, p521_smaug-t5),
+DECODER_w_structure("smaug_t5", der, PrivateKeyInfo, smaug_t5),
+DECODER_w_structure("smaug_t5", der, SubjectPublicKeyInfo, smaug_t5),
+DECODER_w_structure("p521_smaug_t5", der, PrivateKeyInfo, p521_smaug_t5),
+DECODER_w_structure("p521_smaug_t5", der, SubjectPublicKeyInfo, p521_smaug_t5),
 #endif
 
 #endif /* OQS_KEM_ENCODERS */

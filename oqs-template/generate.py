@@ -43,11 +43,11 @@ def get_kem_nistlevel(alg):
         return None
     elif alg['family'] == 'SMAUG-T':
         name = alg['name_group']
-        if name == 'smaug-t1':
+        if name == 'smaug_t1':
             return 1
-        elif name == 'smaug-t3':
+        elif name == 'smaug_t3':
             return 3
-        elif name == 'smaug-t5':
+        elif name == 'smaug_t5':
             return 5
         return None
 

@@ -484,7 +484,8 @@ kems:
     nid: '65082'
     nid_hybrid: '65083'
     code_point: '65082'
-    oqs_alg: 'OQS_KEM_alg_ntrupkem_576'
+    oqs_alg: 'OQS_KEM_alg_ntru_plus_kem576'
+    bit_security: 128
     enable_kem: true
     extra_nids:
       current:
@@ -498,7 +499,8 @@ kems:
     nid: '65085'
     nid_hybrid: '65086'
     code_point: '65085'
-    oqs_alg: 'OQS_KEM_alg_ntrupkem_768'
+    oqs_alg: 'OQS_KEM_alg_ntru_plus_kem768'
+    bit_security: 192
     enable_kem: true
     extra_nids:
       current:
@@ -512,7 +514,8 @@ kems:
     nid: '65088'
     nid_hybrid: '65089'
     code_point: '65088'
-    oqs_alg: 'OQS_KEM_alg_ntrupkem_864'
+    oqs_alg: 'OQS_KEM_alg_ntru_plus_kem864'
+    bit_security: 192
     enable_kem: true
     extra_nids:
       current:
@@ -526,18 +529,20 @@ kems:
     nid: '65091'
     nid_hybrid: '65092'
     code_point: '65091'
-    oqs_alg: 'OQS_KEM_alg_ntrupkem_1152'
+    oqs_alg: 'OQS_KEM_alg_ntru_plus_kem1152'
+    bit_security: 256
     enable_kem: true
 
   # SMAUG-T KEM 알고리즘들
   -
     family: 'SMAUG-T'
-    name_group: 'smaug-t1'
+    name_group: 'smaug_t1'
     oid: '1.3.9999.13.1.1'
     nid: '65093'
     nid_hybrid: '65094'
     code_point: '65093'
     oqs_alg: 'OQS_KEM_alg_smaug_t1'
+    bit_security: 128
     enable_kem: true
     extra_nids:
       current:
@@ -546,12 +551,13 @@ kems:
           code_point: '65095'
   -
     family: 'SMAUG-T'
-    name_group: 'smaug-t3'
+    name_group: 'smaug_t3'
     oid: '1.3.9999.13.2.1'
     nid: '65096'
     nid_hybrid: '65097'
     code_point: '65096'
     oqs_alg: 'OQS_KEM_alg_smaug_t3'
+    bit_security: 192
     enable_kem: true
     extra_nids:
       current:
@@ -560,12 +566,13 @@ kems:
           code_point: '65098'
   -
     family: 'SMAUG-T'
-    name_group: 'smaug-t5'
+    name_group: 'smaug_t5'
     oid: '1.3.9999.13.3.1'
     nid: '65099'
     nid_hybrid: '65100'
     code_point: '65099'
     oqs_alg: 'OQS_KEM_alg_smaug_t5'
+    bit_security: 256
     enable_kem: true
 
 
