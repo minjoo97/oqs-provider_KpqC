@@ -2243,6 +2243,7 @@ sigs:
         oid: '1.3.9999.14.1.1'
         code_point: '65101'
         enable: true
+        enable_tls: true
         mix_with: [{'name': 'p256',
                     'pretty_name': 'ECDSA p256',
                     'oid': '1.3.9999.14.1.2',
@@ -2254,6 +2255,7 @@ sigs:
         oid: '1.3.9999.14.2.1'
         code_point: '65104'
         enable: true
+        enable_tls: true
         mix_with: [{'name': 'p384',
                     'pretty_name': 'ECDSA p384',
                     'oid': '1.3.9999.14.2.2',
@@ -2265,6 +2267,7 @@ sigs:
         oid: '1.3.9999.14.3.1'
         code_point: '65107'
         enable: true
+        enable_tls: true
         mix_with: [{'name': 'p521',
                     'pretty_name': 'ECDSA p521',
                     'oid': '1.3.9999.14.3.2',
@@ -2279,6 +2282,7 @@ sigs:
         oid: '1.3.9999.11.1.1'
         code_point: '65073'
         enable: true
+        enable_tls: true
         mix_with: [{'name': 'p256',
                     'pretty_name': 'ECDSA p256',
                     'oid': '1.3.9999.11.1.2',
@@ -2290,6 +2294,7 @@ sigs:
         oid: '1.3.9999.11.1.3'
         code_point: '65110'
         enable: true
+        enable_tls: true
         mix_with: [{'name': 'p256',
                     'pretty_name': 'ECDSA p256',
                     'oid': '1.3.9999.11.1.4',
@@ -2301,6 +2306,7 @@ sigs:
         oid: '1.3.9999.11.2.1'
         code_point: '65076'
         enable: true
+        enable_tls: true
         mix_with: [{'name': 'p384',
                     'pretty_name': 'ECDSA p384',
                     'oid': '1.3.9999.11.2.2',
@@ -2312,6 +2318,7 @@ sigs:
         oid: '1.3.9999.11.2.3'
         code_point: '65112'
         enable: true
+        enable_tls: true
         mix_with: [{'name': 'p384',
                     'pretty_name': 'ECDSA p384',
                     'oid': '1.3.9999.11.2.4',
@@ -2323,6 +2330,7 @@ sigs:
         oid: '1.3.9999.11.3.1'
         code_point: '65079'
         enable: true
+        enable_tls: true
         mix_with: [{'name': 'p521',
                     'pretty_name': 'ECDSA p521',
                     'oid': '1.3.9999.11.3.2',
@@ -2334,6 +2342,7 @@ sigs:
         oid: '1.3.9999.11.3.3'
         code_point: '65114'
         enable: true
+        enable_tls: true
         mix_with: [{'name': 'p521',
                     'pretty_name': 'ECDSA p521',
                     'oid': '1.3.9999.11.3.4',
