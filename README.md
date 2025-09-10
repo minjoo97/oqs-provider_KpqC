@@ -54,22 +54,9 @@ This fork retains the entire `oqs-provider` suite, including BIKE, FrodoKEM, HQC
 
 ---
 
-## 🔒 Limitations & Security
+# 🚀 Quickstart
 
-* This project is for **research and prototyping only** — it is not production-ready.
-* **Do not use** to protect sensitive data.
-* Follow the upstream [liboqs security guidelines](https://github.com/open-quantum-safe/liboqs#limitations-and-security).
-* Prefer **hybrid cryptography** (PQC + classical) during migration testing.
-
-> **Note on AVX2**
->
-> Experimental AVX2-optimized KpqC implementations are included but **not fully validated**. Use them only for performance evaluation, never for security-critical deployments.
-
----
-
-## 🚀 Quickstart
-
-### Build (Linux/macOS)
+## Build (Linux/macOS)
 
 ```bash
 git clone -b main <your-repo-url>
@@ -77,33 +64,34 @@ cd KpqC-provider
 mkdir build && cd build
 cmake -GNinja ..
 ninja
+```
 
 ## Test
 
 From the `build` directory:
 ```bash
 ctest
+```
 
-(You may also adapt upstream’s scripts/fullbuild.sh and scripts/runtests.sh.)
+(You may also adapt upstream's scripts/fullbuild.sh and scripts/runtests.sh.)
 
-
-##Activate the Provider
+## Activate the Provider
+```bash
 # Example: Set OPENSSL_MODULES to where the built provider is installed
 export OPENSSL_MODULES=/usr/local/lib/ossl-modules
 
 # Verify algorithms are available
 openssl list -kem-algorithms -provider oqsprovider
 openssl list -signature-algorithms -provider oqsprovider
+```
 
-Windows (Visual Studio 2019+)
-Clone the repository.
+## Windows (Visual Studio 2019+)
+1. Clone the repository.
+2. Open the folder in Visual Studio (CMake auto-configures).
+3. Build the ALL_BUILD target.
 
-Open the folder in Visual Studio (CMake auto-configures).
-
-Build the ALL_BUILD target.
-
-📜 License
+## 📜 License
 This project is licensed under the MIT License. See LICENSE.txt for details. Upstream oqs-provider and liboqs are also MIT-licensed.
 
-🙏 Acknowledgements
+## 🙏 Acknowledgements
 This project is a fork of oqs-provider, built on liboqs. We thank the OQS contributors and the PQCA under the Linux Foundation.
