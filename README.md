@@ -78,7 +78,7 @@ mkdir build && cd build
 cmake -GNinja ..
 ninja
 
-### Test
+## Test
 
 From the `build` directory:
 ```bash
