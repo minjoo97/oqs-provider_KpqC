@@ -1,15 +1,35 @@
+# CMake generated files
 CMakeLists.txt.user
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
+CMakeFiles/
+CMakeScripts/
 cmake_install.cmake
+CMakeUserPresets.json
+CTestTestfile.cmake
+_deps/
+
+# Build directories and outputs
+build/
+Testing/
+
+# Build artifacts
+*.ninja
+*.make
+*.o
+*.a
+*.so
+*.dylib
+
+# Makefiles
+Makefile
+
+# CPack
+CPackConfig.cmake
+CPackSourceConfig.cmake
+
+# Other
 install_manifest.txt
 compile_commands.json
-CTestTestfile.cmake
-_deps
-CMakeUserPresets.json
 
 # CLion
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
